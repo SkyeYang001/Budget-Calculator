@@ -1,0 +1,20 @@
+header {
+    width: 100%;
+    font-size: 50px;
+    border: 2px solid;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    width: 60vw;
+}
+
+.content {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}

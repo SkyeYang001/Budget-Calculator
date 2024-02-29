@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budget Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
         <h1>Budget Calculator</h1>
     </header>
 
-    <h2>Results</h2>
-    <input type="">
-    <section>
+<section class="content">
+    <section class="main">
         <section class="Income">
             <h2>Income</h2>
-            <section class="Dropdown">
+            <section class="Dropdown hidden">
                 <h2>Your Career</h2>
-                <input type="">
+                <form action="">
+                    <select name="interval" id="interval">
+                        <option value="monthly">Monthly</option>
+                        <option value="yearly">Yearly</option>
+                        <option value="weekly">Weekly</option>
+                    </select>
+                </form>
                 <input type="">
                 <h3>Net:</h3>
                 <input type="">
@@ -39,8 +47,14 @@
         </section>
         <section class="Expenses">
             <h2>Expenses</h2>
-            <section class="Dropdown">
-                <input type="">
+            <section class="Dropdown hidden">
+                <form action="">
+                    <select name="interval" id="interval">
+                        <option value="monthly">Monthly</option>
+                        <option value="yearly">Yearly</option>
+                        <option value="weekly">Weekly</option>
+                    </select>
+                </form>
                 <h3>Rates:</h3>
                 <input type="">
                 <h3>Utilities:</h3>
@@ -95,10 +109,58 @@
         </section>
         <section class="Taxes">
             <h2>Taxes</h2>
-            <section class="Dropdown"></section>
+            <section class="Dropdown hidden">
+                <form action="">
+                    <select name="country" id="location">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </form>
+                <form action="">
+                    <select name="interval" id="interval">
+                        <option value="monthly">Monthly</option>
+                        <option value="yearly">Yearly</option>
+                        <option value="weekly">Weekly</option>
+                    </select>
+                </form>
+                <form action="">
+                    <select name="state" id="location">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </form>
+                <form action="">
+                    <select name="county" id="location">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </form>
+                <h3>Federal Taxes:</h3>
+                <input type="text">
+                <h3>State Taxes:</h3>
+                <input type="text">
+                <h3>Local Taxes:</h3>
+                <input type="text">
+                <h2>Your Total Taxes:</h2>
+                <input type="">
+            </section>
         </section>
+        
     </section>
-    <section>
+    <section class="totalResults">
+        <section class="resultsInterval">
+            <h2>Results</h2>
+            <form action="">
+                <select name="interval" id="interval">
+                    <option value="monthly">Monthly</option>
+                    <option value="yearly">Yearly</option>
+                    <option value="weekly">Weekly</option>
+                </select>
+            </form>
+        </section>
         <h3>Total Income</h3>
         <input type="">
         <h3>Total Withdraw</h3>
@@ -108,20 +170,24 @@
         <h3>Total Balances</h3>
         <input type="">
     </section>
+</section>
+    
 
-    <section>
+
+    <section class="pieChart">
         <h2>Pie Chart</h2>
-        <section>
+        <div id="pieChart"></div>
+        <section class="percentage">
             <h2>Percentage</h2>
-            <h3>Income</h3>
-            <h3>Expenses</h3>
-            <h3>Insurance</h3>
-            <h3>Loans</h3>
-            <h3>Transport</h3>
-            <h3>Entertainment</h3>
-            <h3>Taxes</h3>
+            <h3>Expenses:</h3>
+            <h3>Insurance:</h3>
+            <h3>Loans:</h3>
+            <h3>Transport:</h3>
+            <h3>Entertainment:</h3>
+            <h3>Taxes:</h3>
         </section>
     </section>
-    
+
 </body>
+
 </html>
