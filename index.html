@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budget Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -21,6 +22,14 @@
             <h2>Income</h2>
             <section class="Dropdown hidden">
                 <h2>Your Career</h2>
+                <section class="careerDropdownMenu">
+                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                <section id="careerDropdown" class="careerDropdown-Content">
+                    <a id="a">a</a>
+                    <a id="b">b</a>
+                    <a id="c">c</a>
+                </section>
+            </section>
                 <form action="">
                     <select name="interval" id="interval">
                         <option value="monthly">Monthly</option>
@@ -110,8 +119,9 @@
         <section class="Taxes">
             <h2>Taxes</h2>
             <section class="Dropdown hidden">
+                <h3>Your Country/State/County</h3>
                 <form action="">
-                    <select name="country" id="location">
+                    <select name="location" id="location">
                         <option value=""></option>
                         <option value=""></option>
                         <option value=""></option>
@@ -122,20 +132,6 @@
                         <option value="monthly">Monthly</option>
                         <option value="yearly">Yearly</option>
                         <option value="weekly">Weekly</option>
-                    </select>
-                </form>
-                <form action="">
-                    <select name="state" id="location">
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                    </select>
-                </form>
-                <form action="">
-                    <select name="county" id="location">
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
                     </select>
                 </form>
                 <h3>Federal Taxes:</h3>
