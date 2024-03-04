@@ -1,16 +1,32 @@
-function myFunction() {
-    document.getElementById("careerDropdown").classList.toggle("show");
-  }
+document.addEventListener("DOMContentLoaded", function () {
 
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("CareerDropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
+
+  document.getElementById('interval').addEventListener('change', function (eventData) {
+    let interval = document.getElementById("interval").value
+    console.log(interval)
+
+
+
+  
+
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
