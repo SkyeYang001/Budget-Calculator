@@ -2,9 +2,11 @@
     margin: 0%;
     padding: 0%;
 }
+
 body {
     background-color: #9FCDEE;
 }
+
 header {
     width: 100%;
     font-size: 32px;
@@ -18,8 +20,7 @@ header {
     flex-direction: column;
     border: 2px solid;
     width: 60vw;
-    justify-content: space-between;
-    padding-left: 15px;
+    margin:10px 100px 10px 10px;
 }
 
 .content {
@@ -29,30 +30,23 @@ header {
 /* .hidden {
     display: none;
 } */
-.options{
-    
-}
-
-.Dropdown {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.optionMenu {
-    border: 2px solid;
-    background-color: #82B5F2;
-    padding-left: 1rem;
-    padding-top: 5px;
-}
 
 .totalresults {
     display: flex;
     flex-flow: column nowrap;
     background-color: #005ECD;
-    height: 100%;
+    height: 25vh;
     justify-content: space-between;
     padding-top: 5%;
     padding-bottom: 5%;
+}
+
+.row h3 {
+    background-color: black;
+    border: none;
+    padding: 5px ;
+    margin-top: 0%;
+    /* margin-bottom: 5%; */
 }
 
 .row {
@@ -61,10 +55,19 @@ header {
     background-color: black;
     color: #9FCDEE;
 }
-.row > input {
-background-color: black;
-border: none;
-color: white;
-margin-top: 0%;
-margin-bottom: 5%;
+
+.row>input {
+    background-color: black;
+    border: none;
+    color: white;
+    margin-top: 0%;
+    margin-bottom: 5%;
+}
+
+.options{
+    margin-left: 10px;
+}
+
+.Dropdown h3{
+    padding: 10px;
 }
