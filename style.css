@@ -41,6 +41,10 @@ header {
     padding-bottom: 5%;
 }
 
+.totalresults h3 {
+    font-size: 35px;
+}
+
 .row h3 {
     background-color: black;
     border: none;
@@ -66,8 +70,21 @@ header {
 
 .options{
     margin-left: 10px;
+    
 }
 
 .Dropdown h3{
     padding: 10px;
+}
+
+.optionBox {
+    background-color: #82B5F2;
+}
+
+.options h2 {
+    border: solid;
+}
+
+.interval {
+    background-color: #98DFF5 ;
 }
