@@ -27,9 +27,9 @@ header {
     display: flex;
 }
 
-/* .hidden {
+.hidden {
     display: none;
-} */
+}
 
 .totalresults {
     display: flex;
@@ -87,4 +87,34 @@ header {
 
 .interval {
     background-color: #98DFF5 ;
+}
+
+.percentage {
+    border-style: solid;
+    border-width: 3px;
+    background-color: #005ECD;
+    margin-left: 15%;
+    width: 450px;
+}
+
+.percentage h2{
+    padding:10px;
+}
+
+.percentage h3{
+    padding:10px;
+}
+
+.pieChartRow{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.pieChart{
+   margin-top:5%;
+}
+
+.pie{
+    margin-left:10%;
 }

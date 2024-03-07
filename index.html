@@ -30,8 +30,8 @@
                                 <form action="">
                                     <select name="careers" id="careers">
                                         <div id="root">
-                                        <option value=""></option>
-                                    </div>
+                                            <option value=""></option>
+                                        </div>
                                     </select>
                                 </form>
                             </section>
@@ -188,18 +188,20 @@
 
     <section class="pieChart">
         <h2>Pie Chart</h2>
-        <section>
-            <div id="piechart" style="width: 800px;"><canvas id="chart"></canvas></div>
-            <script type="module" src="chart.js"></script>
-        </section>
-        <section class="percentage">
-            <h2>Percentage</h2>
-            <h3>Expenses:</h3>
-            <h3>Insurance:</h3>
-            <h3>Loans:</h3>
-            <h3>Transport:</h3>
-            <h3>Entertainment:</h3>
-            <h3>Taxes:</h3>
+        <section class="pieChartRow">
+            <section class="pie">
+                <div id="piechart" style="width: 800px;"><canvas id="chart"></canvas></div>
+                <script type="module" src="chart.js"></script>
+            </section>
+            <section class="percentage">
+                <h2>Percentage</h2>
+                <h3>Expenses:</h3>
+                <h3>Insurance:</h3>
+                <h3>Loans:</h3>
+                <h3>Transport:</h3>
+                <h3>Entertainment:</h3>
+                <h3>Taxes:</h3>
+            </section>
         </section>
     </section>
 
