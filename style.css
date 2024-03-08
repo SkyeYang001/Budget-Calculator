@@ -3,6 +3,10 @@
     padding: 0%;
 }
 
+.hidden {
+    display: none;
+}
+
 body {
     background-color: #9FCDEE;
 }
@@ -15,20 +19,25 @@ header {
     background-color: #B4DAE3;
 }
 
-.main {
+
+main {
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    border: 2px solid;
-    width: 60vw;
-    margin:10px 100px 10px 10px;
+    width: 90%;
+    margin: 30px 30px 0px 30px;
 }
 
 .content {
     display: flex;
+    justify-content: space-between;
 }
 
-.hidden {
-    display: none;
+.mainBox {
+    display: flex;
+
+    flex-direction: column;
+    /* margin:10px 100px 10px 10px; */
 }
 
 .totalresults {
@@ -45,6 +54,18 @@ header {
     font-size: 35px;
 }
 
+.resultsInterval {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.resultsInterval h2 {
+    color: #FFFFFF;
+    font-size: 35px;
+}
+
 .row h3 {
     background-color: black;
     border: none;
@@ -58,6 +79,7 @@ header {
     justify-content: space-between;
     background-color: black;
     color: #9FCDEE;
+    width: 635px;
 }
 
 .row>input {
@@ -67,22 +89,66 @@ header {
     margin-top: 0%;
     margin-bottom: 5%;
 }
-
-.options{
-    margin-left: 10px;
-    
+.DropDownArrow {
+    width: 35px;
+    height: 30px;
 }
 
-.Dropdown h3{
+.option {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50vw;
+    /* height: 20vw; */
+}
+
+.optionTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 10px;
+    border: solid;
 }
 
 .optionBox {
     background-color: #82B5F2;
 }
 
-.options h2 {
+.optionMenu {
+    padding: 15px;
+}
+
+
+
+.Dropdown {
     border: solid;
+    padding: 10px;
+}
+
+.dropdownPress {
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
+.dropdownInputs h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.dropdownTotal {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.intervalRow {
+    display:flex;
+    justify-content: flex-end;
+}
+
+.careerRow {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
 }
 
 .interval {
@@ -99,6 +165,7 @@ header {
 
 .percentage h2{
     padding:10px;
+    color: white;
 }
 
 .percentage h3{
@@ -108,11 +175,20 @@ header {
 .pieChartRow{
     display: flex;
     flex-direction: row;
-    
 }
 
 .pieChart{
    margin-top:5%;
+}
+
+.pieChartColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pieChartColumn h2 {
+    color: white;
 }
 
 .pie{
