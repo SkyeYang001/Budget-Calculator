@@ -11,6 +11,14 @@
     <script src="util.js"></script>
 </head>
 
+<!-- <script>
+
+    function dropdown() {
+        document.getElementsByClassName("Dropdown").style.visibility = "hidden";
+    }
+
+</script> -->
+
 <body>
     <header>
         <h1>Budget Calculator</h1>
@@ -22,179 +30,179 @@
                 <section class="option">
                     <section class="Income optionMenu">
                         <section class="optionBox">
-                        <section class="optionTop">
-                            <h2>Income</h2>
-                            <div>
-                                <button onclick="dropdown()" class="Income dropdownPress">
-                                    <img class="DropDownArrow" src="Icons/DropDownArrow.svg" alt="">
-                                </button>
-                            </div>
-                        </section>
-                        <section class="Dropdown hidden" id="IncomeDropdown">
-                            <section class="intervalRow">
-                                <form action="">
-                                    <select name="interval" id="interval" class="interval">
-                                        <option value="monthly">Monthly</option>
-                                        <option value="yearly">Yearly</option>
-                                        <option value="weekly">Weekly</option>
-                                    </select>
-                                </form>
+                            <section class="optionTop">
+                                <h2>Income</h2>
+                                <div>
+                                    <button class="Income dropdownPress" onclick="dropdown()">
+                                        <img class="DropDownArrow" src="Icons/DropDownArrow.svg" alt="">
+                                    </button>
+                                </div>
                             </section>
-                            <section class="careerRow">
-                                <h2>Your Career</h2>
-                                <section class="careerDropdownMenu">
+                            <section class="Dropdown hidden" id="IncomeDropdown">
+                                <section class="intervalRow">
                                     <form action="">
-                                        <select name="careers" id="careers">
-                                            <div id="root">
-                                                <option value=""></option>
-                                            </div>
+                                        <select name="interval" id="interval" class="interval">
+                                            <option value="monthly">Monthly</option>
+                                            <option value="weekly">Weekly</option>
+                                            <option value="yearly">Yearly</option>
                                         </select>
                                     </form>
                                 </section>
+                                <section class="careerRow">
+                                    <h2>Your Career</h2>
+                                    <section class="careerDropdownMenu">
+                                        <form action="">
+                                            <select name="careers" id="careers">
+                                                <div id="root">
+                                                    <option value=""></option>
+                                                </div>
+                                            </select>
+                                        </form>
+                                    </section>
+                                </section>
+                                <section class="dropdownInputs">
+                                    <h3>Net:</h3>
+                                    <input type="">
+                                    <h3>Investment:</h3>
+                                    <input type="">
+                                    <h3>Allowances:</h3>
+                                    <input type="">
+                                    <h3>Other Income:</h3>
+                                    <input type="">
+                                    <h3>Investment Income:</h3>
+                                    <input type="">
+                                    <h3>Additional Deposits:</h3>
+                                    <input type="">
+                                </section>
+                                <section class="dropdownTotal">
+                                    <h2>Your Total Income:</h2>
+                                    <h2></h2>
+                                </section>
                             </section>
-                            <section class="dropdownInputs">
-                                <h3>Net:</h3>
-                                <input type="">
-                                <h3>Investment:</h3>
-                                <input type="">
-                                <h3>Allowances:</h3>
-                                <input type="">
-                                <h3>Other Income:</h3>
-                                <input type="">
-                                <h3>Investment Income:</h3>
-                                <input type="">
-                                <h3>Additional Deposits:</h3>
-                                <input type="">
-                            </section>
-                            <section class="dropdownTotal">
-                                <h2>Your Total Income:</h2>
-                                <h2></h2>
-                            </section>
-                        </section>
                         </section>
                     </section>
                     <section class="Expenses optionMenu">
                         <section class="optionBox">
-                        <section class="optionTop">
-                            <h2>Expenses</h2>
-                            <div>
-                                <button onclick="" class="Expenses dropdownPress">
-                                    <img class="DropDownArrow" src="Icons/DropDownArrow.svg" alt="">
-                                </button>
-                            </div>
-                        </section>
-                        <section class="Dropdown hidden">
-                            <section class="intervalRow">
-                                <form action="">
-                                    <select name="interval" id="interval" class="interval">
-                                        <option value="monthly">Monthly</option>
-                                        <option value="yearly">Yearly</option>
-                                        <option value="weekly">Weekly</option>
-                                    </select>
-                                </form>
+                            <section class="optionTop">
+                                <h2>Expenses</h2>
+                                <div>
+                                    <button onclick="" class="Expenses dropdownPress">
+                                        <img class="DropDownArrow" src="Icons/DropDownArrow.svg" alt="">
+                                    </button>
+                                </div>
                             </section>
-                            <section class="dropdownInputs">
-                                <h3>Rates:</h3>
-                                <input type="">
-                                <h3>Utilities:</h3>
-                                <input type="">
-                                <h3>Maintenance:</h3>
-                                <input type="">
-                                <h3>Medical:</h3>
-                                <input type="">
-                                <h3>Protection:</h3>
-                                <input type="">
-                                <h3>Health Insurance:</h3>
-                                <input type="">
-                                <h3>Home Insurance:</h3>
-                                <input type="">
-                                <h3>Car Insurance:</h3>
-                                <input type="">
-                                <h3>Business Insurance:</h3>
-                                <input type="">
-                                <h3>Landlord Insurance:</h3>
-                                <input type="">
-                                <h3>Rent:</h3>
-                                <input type="">
-                                <h3>Personal Loan:</h3>
-                                <input type="">
-                                <h3>Credit Card:</h3>
-                                <input type="">
-                                <h3>Store Card:</h3>
-                                <input type="">
-                                <h3>Other Loan:</h3>
-                                <input type="">
-                                <h3>Car:</h3>
-                                <input type="">
-                                <h3>Parking:</h3>
-                                <input type="">
-                                <h3>License:</h3>
-                                <input type="">
-                                <h3>Food:</h3>
-                                <input type="">
-                                <h3>Internet:</h3>
-                                <input type="">
-                                <h3>Clothing:</h3>
-                                <input type="">
-                                <h3>Personal Care:</h3>
-                                <input type="">
-                                <h3>Pets:</h3>
-                                <input type="">
-                                <h3>Childcare:</h3>
-                                <input type="">
+                            <section class="Dropdown hidden">
+                                <section class="intervalRow">
+                                    <form action="">
+                                        <select name="interval" id="interval" class="interval">
+                                            <option value="monthly">Monthly</option>
+                                            <option value="weekly">Weekly</option>
+                                            <option value="yearly">Yearly</option>
+                                        </select>
+                                    </form>
+                                </section>
+                                <section class="dropdownInputs">
+                                    <h3>Rates:</h3>
+                                    <input type="">
+                                    <h3>Utilities:</h3>
+                                    <input type="">
+                                    <h3>Maintenance:</h3>
+                                    <input type="">
+                                    <h3>Medical:</h3>
+                                    <input type="">
+                                    <h3>Protection:</h3>
+                                    <input type="">
+                                    <h3>Health Insurance:</h3>
+                                    <input type="">
+                                    <h3>Home Insurance:</h3>
+                                    <input type="">
+                                    <h3>Car Insurance:</h3>
+                                    <input type="">
+                                    <h3>Business Insurance:</h3>
+                                    <input type="">
+                                    <h3>Landlord Insurance:</h3>
+                                    <input type="">
+                                    <h3>Rent:</h3>
+                                    <input type="">
+                                    <h3>Personal Loan:</h3>
+                                    <input type="">
+                                    <h3>Credit Card:</h3>
+                                    <input type="">
+                                    <h3>Store Card:</h3>
+                                    <input type="">
+                                    <h3>Other Loan:</h3>
+                                    <input type="">
+                                    <h3>Car:</h3>
+                                    <input type="">
+                                    <h3>Parking:</h3>
+                                    <input type="">
+                                    <h3>License:</h3>
+                                    <input type="">
+                                    <h3>Food:</h3>
+                                    <input type="">
+                                    <h3>Internet:</h3>
+                                    <input type="">
+                                    <h3>Clothing:</h3>
+                                    <input type="">
+                                    <h3>Personal Care:</h3>
+                                    <input type="">
+                                    <h3>Pets:</h3>
+                                    <input type="">
+                                    <h3>Childcare:</h3>
+                                    <input type="">
+                                </section>
+                                <section class="dropdownTotal">
+                                    <h2>Your Total Withdrawl:</h2>
+                                    <h2></h2>
+                                </section>
                             </section>
-                            <section class="dropdownTotal">
-                            <h2>Your Total Withdrawl:</h2>
-                            <h2></h2>
-                            </section>
-                        </section>
                         </section>
                     </section>
                     <section class="Taxes optionMenu">
                         <section class="optionBox">
-                        <section class="optionTop">
-                            <h2>Taxes</h2>
-                            <div>
-                                <button onclick="" class="Taxes dropdownPress">
-                                    <img class="DropDownArrow" src="Icons/DropDownArrow.svg" alt="">
-                                </button>
-                            </div>
-                        </section>
-                        <section class="Dropdown hidden">
-                            <section class="intervalRow">
-                                <form action="">
-                                    <select name="interval" id="interval" class="interval">
-                                        <option value="monthly">Monthly</option>
-                                        <option value="yearly">Yearly</option>
-                                        <option value="weekly">Weekly</option>
-                                    </select>
-                                </form>
+                            <section class="optionTop">
+                                <h2>Taxes</h2>
+                                <div>
+                                    <button onclick="" class="Taxes dropdownPress">
+                                        <img class="DropDownArrow" src="Icons/DropDownArrow.svg" alt="">
+                                    </button>
+                                </div>
                             </section>
-                            <section class="careerRow">
-                                <h3>Your Country/State/County</h3>
-                                <section class="careerDropdownMenu">
+                            <section class="Dropdown hidden">
+                                <section class="intervalRow">
                                     <form action="">
-                                        <select name="location" id="location">
-                                            <option value=""></option>
-                                            <option value=""></option>
-                                            <option value=""></option>
+                                        <select name="interval" id="interval" class="interval">
+                                            <option value="monthly">Monthly</option>
+                                            <option value="weekly">Weekly</option>
+                                            <option value="yearly">Yearly</option>
                                         </select>
                                     </form>
                                 </section>
+                                <section class="careerRow">
+                                    <h3>Your Country/State/County</h3>
+                                    <section class="careerDropdownMenu">
+                                        <form action="">
+                                            <select name="location" id="location">
+                                                <option value=""></option>
+                                                <option value=""></option>
+                                                <option value=""></option>
+                                            </select>
+                                        </form>
+                                    </section>
+                                </section>
+                                <section class="dropdownInputs">
+                                    <h3>Federal Taxes:</h3>
+                                    <input type="text">
+                                    <h3>State Taxes:</h3>
+                                    <input type="text">
+                                    <h3>Local Taxes:</h3>
+                                    <input type="text">
+                                </section>
+                                <section class="dropdownTotal">
+                                    <h2>Your Total Taxes:</h2>
+                                    <h2></h2>
+                                </section>
                             </section>
-                            <section class="dropdownInputs">
-                                <h3>Federal Taxes:</h3>
-                                <input type="text">
-                                <h3>State Taxes:</h3>
-                                <input type="text">
-                                <h3>Local Taxes:</h3>
-                                <input type="text">
-                            </section>
-                            <section class="dropdownTotal">
-                            <h2>Your Total Taxes:</h2>
-                            <h2></h2>
-                            </section>
-                        </section>
                         </section>
                     </section>
                 </section>
@@ -205,8 +213,8 @@
                     <form action="">
                         <select name="interval" id="" class="interval totalinterval">
                             <option value="monthly">Monthly</option>
-                            <option value="yearly">Yearly</option>
                             <option value="weekly">Weekly</option>
+                            <option value="yearly">Yearly</option>
                         </select>
                     </form>
                 </section>
