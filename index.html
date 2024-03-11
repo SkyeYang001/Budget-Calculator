@@ -8,7 +8,7 @@
     <title>Budget Calculator</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <script src="util.js"></script>
+    <script src="utils.js"></script>
 </head>
 
 <!-- <script>
@@ -28,12 +28,12 @@
         <section class="content">
             <section class="mainBox">
                 <section class="option">
-                    <section class="Income optionMenu">
+                    <section class="IncomeOP optionMenu" id="IncomeOP">
                         <section class="optionBox">
                             <section class="optionTop">
                                 <h2>Income</h2>
                                 <div>
-                                    <button class="Income dropdownPress" onclick="dropdown()">
+                                    <button class="IncomeDP dropdownPress" onclick="" id="IncomeDP">
                                         <img class="DropDownArrow" src="Icons/DropDownArrow.svg" alt="">
                                     </button>
                                 </div>
@@ -51,13 +51,11 @@
                                 <section class="careerRow">
                                     <h2>Your Career</h2>
                                     <section class="careerDropdownMenu">
-                                        <form action="">
-                                            <select name="careers" id="careers">
-                                                <div id="root">
-                                                    <option value=""></option>
-                                                </div>
-                                            </select>
-                                        </form>
+
+                                    <form>
+                                        <select id="root"></select>
+                                    </form>
+
                                     </section>
                                 </section>
                                 <section class="dropdownInputs">
@@ -81,12 +79,12 @@
                             </section>
                         </section>
                     </section>
-                    <section class="Expenses optionMenu">
+                    <section class="ExpensesOP optionMenu">
                         <section class="optionBox">
                             <section class="optionTop">
                                 <h2>Expenses</h2>
                                 <div>
-                                    <button onclick="" class="Expenses dropdownPress">
+                                    <button onclick="" class="ExpensesDP dropdownPress">
                                         <img class="DropDownArrow" src="Icons/DropDownArrow.svg" alt="">
                                     </button>
                                 </div>
@@ -158,12 +156,12 @@
                             </section>
                         </section>
                     </section>
-                    <section class="Taxes optionMenu">
+                    <section class="Taxesop optionMenu">
                         <section class="optionBox">
                             <section class="optionTop">
                                 <h2>Taxes</h2>
                                 <div>
-                                    <button onclick="" class="Taxes dropdownPress">
+                                    <button onclick="" class="TaxesDP dropdownPress">
                                         <img class="DropDownArrow" src="Icons/DropDownArrow.svg" alt="">
                                     </button>
                                 </div>
@@ -238,6 +236,8 @@
                 </section>
             </section>
         </section>
+
+<hr>
 
         <section class="pieChart">
 

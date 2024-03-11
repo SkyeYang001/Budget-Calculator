@@ -23,13 +23,16 @@ header {
     background-color: #B4DAE3;
 }
 
-
 main {
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 90%;
     margin: 30px 30px 0px 30px;
+}
+
+hr {
+    border: 3px solid black;
 }
 
 .content {
@@ -158,8 +161,19 @@ main {
 
 .careerRow {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     width: 30%;
+}
+
+.careerDropdownMenu {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#root {
+    background-color: #005ECD;
+    color: white;
+    font-size: 15px;
 }
 
 .interval {

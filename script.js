@@ -5,17 +5,26 @@ document.addEventListener("DOMContentLoaded", function () {
         buttons.forEach(button => button.addEventListener('click', processForm))
     }
 
-    // document.getElementById('interval').addEventListener('change', function (eventData) {
-    //   let interval = document.getElementById("interval").value
-    //   console.log(interval)
 
 
+    document.getElementById('interval').addEventListener('change', function (eventData) {
+      let interval = document.getElementsByClassName("interval").value;
+      console.log(interval)
 
+      
 
+    });
 
-    // });
-
-
+    document.getElementsById('IncomeDP').addEventListener('change', function (eventData) {
+        console.log(eventData.target);
+        var income = document.getElementById('IncomeOP');
+        if (income.style.display === "none") {
+            income.style.display = "block";
+        } else {
+            income.style.display = "none";
+        }
+        return document.getElementById('IncomeOP');
+    });
 
 
     // document.getElementsByClassName("dropdownPress").addEventListener("show", function (eventPress) {

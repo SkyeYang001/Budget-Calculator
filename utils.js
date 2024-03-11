@@ -52,7 +52,7 @@ async function init() {
     let root = document.querySelector('#root');
 
     //create a variable to hold the URL of the JSON data source
-    let url = 'https://api-demo.cartwebapp.com/data/2024';
+    let url = 'https://eecu-data-server.vercel.app/data/2024';
 
     //create a variable to hold the JSON data
     let occupations = null; 
@@ -80,7 +80,7 @@ function buildList(jobs) {
     for (let job of jobs) {
 
         //start an HTML section for each job
-        html += '<section>';
+
 
         /* An alternative way of looping through each item in the data, not as useful for this assignment but something to keep in mind for a story? ... */
         //loop through each entry and create a div for each key:value pair
@@ -89,11 +89,10 @@ function buildList(jobs) {
         // }
 
         //create a div element for the job title
-        html += `<div><strong>Occupation</strong>: ${job.occupation}</div>`;
+        html += `<option><strong>${job.occupation}</strong> $${job.salary.toLocaleString('en-US')}</option>`;
         //create a div element for the salary and format it as currency
-        html += `<div><strong>Salary</strong>: $${job.salary.toLocaleString('en-US')}</div>`;
         //close the section
-        html += '</section>';
+
     }
 
     //return the completed html

@@ -12,7 +12,7 @@ import Chart from './node_modules/chart.js/auto'
         ],
         datasets: [{
           label: 'My First Dataset',
-          data: [50, 50, 50, 50, 50 ,15 ],
+          data: [50, 50, 50, 50, 50 ,50 ],
           backgroundColor: [
             '#82B5F2',
             '#82B5F2',
