@@ -26,7 +26,7 @@ import Chart from './node_modules/chart.js/auto'
       };
   
     new Chart(
-      document.getElementById('chart'),
+      document.getElementById('chartMobile'),
       {
         type: 'pie',
         data: data,

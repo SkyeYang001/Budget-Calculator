@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budget Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Desktop.css">
+    <link rel="stylesheet" href="Mobile.css">
     <script src="script.js"></script>
     <script src="utils.js"></script>
 </head>
@@ -23,6 +24,39 @@
     <header>
         <h1>Budget Calculator</h1>
     </header>
+
+    <section class="mobile">
+        <section class="mobileresults">
+            <div class="rowMobile">
+                <h3>Total Income:</h3>
+                <h3></h3>
+            </div>
+            <div class="rowMobile">
+                <h3>Total Withdraw:</h3>
+                <h3></h3>
+            </div>
+            <div class="rowMobile">
+                <h3>Total Taxes:</h3>
+                <h3></h3>
+            </div>
+            <div class="rowMobile" id="balancesMobile">
+                <h3>Total Balances:</h3>
+                <h3></h3>
+            </div>
+        </section>
+
+        <section class="yourresultsMobile">
+            <h2>Your Results</h2>
+            <form action="">
+                <select name="interval" id="" class="interval totalinterval">
+                    <option value="monthly">Monthly</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="yearly">Yearly</option>
+                </select>
+            </form>
+
+        </section>
+    </section>
 
     <main>
         <section class="content">
@@ -52,9 +86,9 @@
                                     <h2>Your Career</h2>
                                     <section class="careerDropdownMenu">
 
-                                    <form>
-                                        <select id="root"></select>
-                                    </form>
+                                        <form>
+                                            <select id="root"></select>
+                                        </form>
 
                                     </section>
                                 </section>
@@ -205,7 +239,7 @@
                     </section>
                 </section>
             </section>
-            <section class="totalResults">
+            <section class="totalResultscolumn">
                 <section class="resultsInterval">
                     <h2>Your Results</h2>
                     <form action="">
@@ -237,7 +271,7 @@
             </section>
         </section>
 
-<hr>
+        <hr>
 
         <section class="pieChart">
 
@@ -260,7 +294,29 @@
                 </section>
             </section>
         </section>
+
+        <section class="mobile">
+            <section class="pieChartMobile">
+                <h2>Pie Chart</h2>
+                <section class="pieMobile">
+                    <div id="piechartMobile" style="width: 250px;"><canvas id="chart"></canvas></div>
+                    <script type="module" src="chartMobile.js"></script>
+                </section>
+                <section class="percentage" id="percentageMobile">
+                    <h2>Your Percentage Income</h2>
+                    <h3>Expenses:</h3>
+                    <h3>Insurance:</h3>
+                    <h3>Loans:</h3>
+                    <h3>Transport:</h3>
+                    <h3>Entertainment:</h3>
+                    <h3>Taxes:</h3>
+                </section>
+
+            </section>
+        </section>
+
+
     </main>
 </body>
 
-</html>
+</html>7

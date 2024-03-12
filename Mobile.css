@@ -1,0 +1,132 @@
+@media only screen and (max-width:640px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    header {
+        width: 100%;
+        font-size: 20px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid;
+        padding-bottom: 5%;
+        background-color: #B4DAE3;
+    }
+
+    .totalResultscolumn {
+        display:none;
+    }
+
+    .mobile {
+        display:block;
+    }
+    
+    .mobileresults {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        padding-bottom: 15px;
+        background-color: #005ECD;
+        height: 5vh;
+        position:absolute;
+        z-index: 1;
+    }
+
+    .mobileresults h3 {
+        font-size: 25px;
+        color: #9FCDEE;
+    }
+
+    .rowMobile {
+        display: flex;
+        justify-content: space-between;
+        background-color: #005ECD;
+        width: 635px;
+        border: solid;
+        padding: 5px ;
+        margin-top: 0%;
+    }
+    
+    .rowMobile>input {
+        border: none;
+        color: white;
+        margin-top: 0%;
+        margin-bottom: 5%;
+    }
+
+    #balancesMobile {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .yourresultsMobile {
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .yourresultsMobile h2 {
+        color: white;
+        font-size: 30px;
+    }
+
+    /* .content {
+        display: flex;
+        justify-content: center;
+    } */
+
+    /* .mainbox {
+        display: flex;
+        justify-content: center;
+    } */
+
+    /* .option {
+        display: flex;
+        justify-content: center;
+    } */
+
+    .optionMenu {
+        width: 80vw;
+    }
+
+    .careerRow {
+        width: 50%;
+    }
+
+    .pieChart {
+        display: none;
+    }
+
+    .pieChartMobile {
+        display:flex;
+        align-items:center;
+        flex-direction: column;
+        margin-top:5%;
+    }
+
+
+    .pieChartMobile h2 {
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-size: 35px;
+    }
+
+    .percentage {
+        margin-left: 0%;
+    }
+
+    .percentage h2{
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        padding: 15px;
+    }
+    
+    .percentage h3{
+        padding: 15px;
+        font-size: 25px;
+    }
+}
