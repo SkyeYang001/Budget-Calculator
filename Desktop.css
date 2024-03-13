@@ -35,6 +35,10 @@ hr {
     display: none;
 }
 
+.yourresultsMobile {
+    display: none;
+}
+
 .content {
     display: flex;
     justify-content: space-between;

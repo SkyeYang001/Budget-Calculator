@@ -30,8 +30,9 @@
         padding-bottom: 15px;
         background-color: #005ECD;
         height: 5vh;
-        position:absolute;
-        z-index: 1;
+        position: sticky;
+        top: 16px;
+        /* z-index: 1; */
     }
 
     .mobileresults h3 {
@@ -59,11 +60,13 @@
     #balancesMobile {
         display: flex;
         align-items: flex-end;
+        margin-top: 81vh;
     }
 
     .yourresultsMobile {
         display:flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        margin-top: 10vh;
     }
 
     .yourresultsMobile h2 {
@@ -71,9 +74,12 @@
         font-size: 30px;
     }
 
+    /* main {
+        margin-top: vh;
+    } */
+
     /* .content {
-        display: flex;
-        justify-content: center;
+        
     } */
 
     /* .mainbox {
@@ -85,6 +91,7 @@
         display: flex;
         justify-content: center;
     } */
+
 
     .optionMenu {
         width: 80vw;
